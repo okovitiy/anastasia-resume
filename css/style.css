@@ -18,6 +18,8 @@ body {
         margin: 0 auto;
         border: 2px solid #eeeeee;
         table-layout: fixed;
+        box-sizing: border-box;
+        overflow: hidden;
     }
         .header-background {
             background: #eeeeee;
@@ -54,13 +56,14 @@ body {
                     color: #a9a9a9;
                 }
         .cv-content {
-            overflow: hidden;
             font-family: Tahoma;
+            width: 100%;
         }
         .left-bar {
             width: 58%;
             float: left;
             padding: 20px 15px 0 10px;
+            box-sizing: border-box;
         }
             .name-content {
                 margin: 0;
@@ -71,9 +74,12 @@ body {
                 margin-bottom: 15px;
             }
                 .me-item {
+                    display: block;
+                    width: auto;
                     font-size: 13px;
+                    text-align: justify;
+                    text-indent: 1.5em;
                 }
-            
                 ul {
                     list-style: none;
                     margin: 0;
@@ -84,7 +90,6 @@ body {
             }
             #timeline {
                 margin: 20px 0 20px 20px;
-                width: 460px;
                 border-left: 5px solid;
                 border-right: 0px;
                 border-image: radial-gradient(#f24b45 30%, #fff) 1 100%;
@@ -93,49 +98,38 @@ body {
                     overflow: hidden;
                     height: auto;
                     font-size: 13px;
+                    position: relative;
+                    margin: 5px 0;
                 }
                 .timeline-year {
-                    float: left;
-                    width: 15px;
-                    height: 20px;
-                    margin-right: 0;
-                    font-size: 13px;
+                    width: 20px;
+                    height: 34px;
                     font-weight: bold;
                     background: white;
                     padding: 5px;
-                    margin-top: 15px;
-                    position: relative;
-                    right: 24px;
+                    font-family: arial;
+                    font-size: 15px;
+                    float: left;
+                    margin-left: -25px;
+                    margin-top: 9px;
                 }
                     .timeline-content {
-                        width: 420px;
                         background: #eeeeee;
                         border-bottom: 2px solid #a9a9a9;
-                        margin-top: 8px;
+                        margin-left: 30px;
                         padding: 5px 0 5px 10px;
-                        float: right;
+                        margin-top: 5px;
                     }
-                    .angl1 {
+                    .angl {
                         width: 0;
                         height: 0;
                         border: 15px solid transparent; 
                         border-right-color: #eeeeee;  
                         border-left: 0;
-                        position: relative;
-                        left: 40px;
-                        bottom: 23px;
                         margin-right: 0;
-                    }
-                    .angl2 {
-                        width: 0;
-                        height: 0;
-                        border: 15px solid transparent; 
-                        border-right-color: #eeeeee;  
-                        border-left: 0;
                         position: relative;
-                        left: 40px;
-                        bottom: 23px;
-                        margin-right: 0;
+                        left: 45px;
+                        bottom: 30px;
                     }
             .experiences {
                 list-style: none;
@@ -151,30 +145,28 @@ body {
                     font-weight: bold;
                     float: left;
                     margin-left: 10px;
-                    
                 }
-                    .exp-year > p {
+                    .exp-year  p {
                         font-size: 13px;
                         font-weight: normal;
                         color: #a9a9a9;
-                        
                     }
                 .exp-content {
                     font-size: 13px;
                     float: right;
                     width: 370px;
-                    
                 }
-                    .exp-content > p {
+                    .exp-content  p {
                         font-weight: bold;
                     }
-                    
                 .exp-item-2 {
                     margin: 20px 0;
                 }
         .right-bar {
-            margin-left: 58%;
+            width: 42%;
             padding: 20px 10px 0 15px;
+            float: right;
+            box-sizing: border-box;
         }
             .contakt {
                 margin: 0;
@@ -187,7 +179,6 @@ body {
                     width: 45px;
                     margin: 0;
                     float: left;
-                    
                 }
                 .fa {
                     color: #a9a9a9;
@@ -195,7 +186,6 @@ body {
                     padding: 15px;
                     border-bottom: 2px solid #eeeeee;
                 }
-                
                     .fa-skype {
                         border-bottom: none;
                     }
@@ -205,17 +195,24 @@ body {
                     .fa-facebook {
                         padding-right: 22px;
                     }
+                #contact-ul a { 
+                    color: #f24b45;
+                    text-decoration: none;
+                }
+                #contact-ul a:hover {
+                    color: orange;
+                }
                 #contact-ul {
                     margin-left: 65px;
                     font-size: 13px;
                     font-weight: bold;
                     
                 }
-                    #contact-ul > li > p {
+                    #contact-ul  li  p {
                         font-size: 12px;
                         font-weight: normal;
                     }
-                    #contact-ul > li {
+                    #contact-ul  li {
                         height: 38px;
                         vertical-align: middle;
                         padding-top: 10px;
@@ -223,7 +220,7 @@ body {
             .skills {
                 margin-top: 20px;
             }
-                #skills-ul > li {
+                #skills-ul  li {
                     display: block;
                     width: auto;
                     height: 20px;
@@ -235,24 +232,24 @@ body {
                     vertical-align: bottom;
                     margin-top: 5px;
                 }
-                    #skills-ul > li:nth-child(1) {
+                    #skills-ul  li:nth-child(1) {
                         margin-right: 240px;
                     }
-                    #skills-ul > li:nth-child(2) {
+                    #skills-ul  li:nth-child(2) {
                         margin-right: 240px;
                     }
-                    #skills-ul > li:nth-child(3) {
-                        margin-right: 0;
+                    #skills-ul  li:nth-child(3) {
+                        margin-right: 10px;
                     }
-                    #skills-ul > li:nth-child(4) {
+                    #skills-ul  li:nth-child(4) {
                         margin-right: 40px;
                     }
-                    #skills-ul > li:nth-child(5) {
+                    #skills-ul  li:nth-child(5) {
                         margin-right: 80px;
                     }
                 .skills-table {
                     border-collapse: collapse;
-                    margin-top: 10px;
+                    margin-top: 15px;
                 }
                     .skills-table td {
                         border-left: 2px solid #a9a9a9;
@@ -329,11 +326,19 @@ body {
                         margin-right: 5px;
                     }
     @media only screen and (max-width:700px){
-        .left-bar {
-            float: left;
-            width: auto;
-            margin: 0 auto;
+        .wrapper {
+            width: 100%;
         }
+        .header-text {
+            width: 100%;
+            height: auto;
+            line-height: 20px;
+            padding:10px;
+        }
+        .me-item {
+            width: 100%;
+        }
+        .left-bar,
         .right-bar {
             float: left;
             width: auto;
