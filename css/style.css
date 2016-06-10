@@ -37,17 +37,17 @@ body {
                 margin: 115px auto 0 auto;
                 text-align: center;
                 line-height: 10px;
-                padding: 0;
-                padding-bottom: 5px;
+                font-family: Tahoma;
             }
-            h2 {
+            .header-text h1 {
+                font-weight: bolder;
+                margin-top: 15px;
+            }
+            .header-text h2 {
                 font-size: 22px;
-            }
-            h3 {
+                padding-bottom: 3px;
                 margin: 0;
-            }
-            p {
-                margin: 0;
+                margin-bottom: 18px;
             }
                .colortext {
                     color: #f24b45;
@@ -70,13 +70,13 @@ body {
                 font-family: arial;
                 font-size: 15px;
                 font-weight: bold;
-                color: #f24b45; 
+                color: #f27245; 
                 margin-bottom: 15px;
             }
                 .me-item {
                     display: block;
                     width: auto;
-                    font-size: 13px;
+                    font-size: 12px;
                     text-align: justify;
                     text-indent: 1.5em;
                 }
@@ -103,22 +103,30 @@ body {
                 }
                 .timeline-year {
                     width: 20px;
-                    height: 34px;
+                    height: 28px;
                     font-weight: bold;
                     background: white;
                     padding: 5px;
                     font-family: arial;
-                    font-size: 15px;
+                    font-size: 12px;
                     float: left;
-                    margin-left: -25px;
+                    margin-left: -23px;
                     margin-top: 9px;
                 }
                     .timeline-content {
                         background: #eeeeee;
                         border-bottom: 2px solid #a9a9a9;
                         margin-left: 30px;
-                        padding: 5px 0 5px 10px;
+                        padding: 8px 0 12px 8px;
                         margin-top: 5px;
+                    }
+                    .timeline-content h3 {
+                        font-size: 13px;
+                        margin: 0;
+                    }
+                    .timeline-content p {
+                        font-size: 12px;
+                        margin: 0;
                     }
                     .angl {
                         width: 0;
@@ -147,16 +155,16 @@ body {
                     margin-left: 10px;
                 }
                     .exp-year  p {
-                        font-size: 13px;
                         font-weight: normal;
                         color: #a9a9a9;
                     }
                 .exp-content {
-                    font-size: 13px;
+                    font-size: 12px;
                     float: right;
                     width: 370px;
                 }
                     .exp-content  p {
+                        font-size: 13px;
                         font-weight: bold;
                     }
                 .exp-item-2 {
