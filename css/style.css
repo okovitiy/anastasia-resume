@@ -153,10 +153,12 @@ body {
                     font-weight: bold;
                     float: left;
                     margin-left: 10px;
+					margin-top: 3px;
                 }
                     .exp-year  p {
                         font-weight: normal;
                         color: #a9a9a9;
+						margin-top: 3px;
                     }
                 .exp-content {
                     font-size: 12px;
@@ -166,6 +168,8 @@ body {
                     .exp-content  p {
                         font-size: 13px;
                         font-weight: bold;
+					    margin: 0;
+						margin-bottom: 3px;
                     }
                 .exp-item-2 {
                     margin: 20px 0;
