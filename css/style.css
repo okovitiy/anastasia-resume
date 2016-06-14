@@ -34,7 +34,7 @@ body {
             .header-text {
                 width: 99%;
                 border-bottom: 2px solid #eeeeee;
-                margin: 115px auto 0 auto;
+                margin: 112px auto 0 auto;
                 text-align: center;
                 line-height: 10px;
                 font-family: Tahoma;
@@ -46,8 +46,7 @@ body {
             .header-text h2 {
                 font-size: 22px;
                 padding-bottom: 3px;
-                margin: 0;
-                margin-bottom: 18px;
+                margin: 0 0 18px 0;
             }
                .colortext {
                     color: #f24b45;
@@ -67,7 +66,7 @@ body {
         }
             .name-content {
                 margin: 0;
-                font-family: arial;
+                font-family: Arial;
                 font-size: 15px;
                 font-weight: bold;
                 color: #f27245; 
@@ -90,6 +89,7 @@ body {
             }
             #timeline {
                 margin: 20px 0 20px 20px;
+                padding: 0 0 5px 0;
                 border-left: 5px solid;
                 border-right: 0px;
                 border-image: radial-gradient(#f24b45 30%, #fff) 1 100%;
@@ -107,18 +107,16 @@ body {
                     font-weight: bold;
                     background: white;
                     padding: 5px;
-                    font-family: arial;
+                    font-family: Arial;
                     font-size: 12px;
                     float: left;
-                    margin-left: -23px;
-                    margin-top: 9px;
+                    margin: 9px 0 0 -23px;
                 }
                     .timeline-content {
                         background: #eeeeee;
                         border-bottom: 2px solid #a9a9a9;
-                        margin-left: 30px;
+                        margin: 5px 0 0 30px;
                         padding: 8px 0 12px 8px;
-                        margin-top: 5px;
                     }
                     .timeline-content h3 {
                         font-size: 13px;
@@ -152,13 +150,12 @@ body {
                     font-size: 10px;
                     font-weight: bold;
                     float: left;
-                    margin-left: 10px;
-					margin-top: 3px;
+                    margin: 3px 0 0 10px;
                 }
                     .exp-year  p {
                         font-weight: normal;
                         color: #a9a9a9;
-						margin-top: 3px;
+                        margin-top: 3px;
                     }
                 .exp-content {
                     font-size: 12px;
@@ -168,8 +165,7 @@ body {
                     .exp-content  p {
                         font-size: 13px;
                         font-weight: bold;
-					    margin: 0;
-						margin-bottom: 3px;
+                        margin: 0 0 3px 0;
                     }
                 .exp-item-2 {
                     margin: 20px 0;
@@ -208,11 +204,12 @@ body {
                         padding-right: 22px;
                     }
                 #contact-ul a { 
-                    color: #f24b45;
-                    text-decoration: none;
+                    font-size: 12px;
+                    font-weight: normal;
+                    color: #a9a9a9;
                 }
                 #contact-ul a:hover {
-                    color: orange;
+                    color: #f27245;
                 }
                 #contact-ul {
                     margin-left: 65px;
@@ -223,6 +220,8 @@ body {
                     #contact-ul  li  p {
                         font-size: 12px;
                         font-weight: normal;
+                        color: #a9a9a9;
+                        margin: 0;
                     }
                     #contact-ul  li {
                         height: 38px;
@@ -261,7 +260,7 @@ body {
                     }
                 .skills-table {
                     border-collapse: collapse;
-                    margin-top: 15px;
+                    margin-top: 10px;
                 }
                     .skills-table td {
                         border-left: 2px solid #a9a9a9;
@@ -297,6 +296,9 @@ body {
                 margin-top: 20px;
                 overflow: hidden;
             }
+                .name-content-lang {
+                    margin-bottom: 5px;
+                }
                 .lang {
                     border-bottom: 1px solid #eeeeee;
                     font-size: 10px;
