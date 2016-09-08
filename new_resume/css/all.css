@@ -1,29 +1,25 @@
-﻿body {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    background: #667081;
-}
-    @font-face {
-        font-family: 'Open sans', Arial, Tahoma;
-        src: url(fonts\Open sans.ttf);
-        src: url(fonts\Arial.ttf);
-        src: url(fonts\Tahoma.ttf);
-        font-size: 14px;
-        color: #000;
-    }
-.first-list {
+﻿/*Общие стили для всего сайта*/
+body {
     width: 100%;
     height: 100%;
-    position: absolute;
+    margin: 0;
+    padding: 0;
+    font-family: 'open_sansregular', 'Arial', 'Tahoma', sans-serif;
+    font-size: 14px;
+    color: #000;
+    background: url(images\fone1.jpg) 100% 100% no-repeat;
+}
+/*Стили первой страницы*/
+.bac-fone {
+    position: fixed;
     top: 0;
     left: 0;
-    overflow: auto;
+    width: 100%;
+    height: 100%;
 }
 .hello-item {
-    border: 1px solid red;
     width: 470px;
-    height: 412px;
+    height: 410px;
     position: absolute;
     top: 0;
     right: 0;
@@ -31,172 +27,389 @@
     left: 0;
     margin: auto;
 }
-    .hello-item  img {
+    .my-foto {
+        width: 200px;
+        height: 200px;
         display: block;
         margin: auto;
         border-radius: 100px;
-        border: 2px solid #fff;
+        border: 1px solid #fff;
     }
-    .hello-item h1,h2,article {
+    .my-name,
+    .my-spacial,
+    .my-descript {
         text-align: center;
         color: #ffffff;
         margin: 0;
         padding: 0;
     }
-    .hello-item h1 {
-        font-family: Arial;
+    .my-name {
+        font-family: 'Open sans';
         font-size: 45px;
+        font-weight: 700;
         margin: 10px 0;
     }
-    .hello-item h2 {
+    .my-spacial {
         font-family: 'Open sans', sans-serif;
         font-size: 30px;
         font-weight: normal;
     }
-    .hello-item article {
+    .my-descript {
         margin: 10px 0;
+        font-weight: normal;
     }
-    .hello-item button {
+    .bt-kn-m {
         display: block;
+        width: 72px;
         margin: auto;
-        padding: 10px 20px;
         border-radius: 5px;
-        border-color: #000614;
-        color: #ffffff;
+        border: none;
         background: #000614;
+        text-decoration: none;
+        color: #ffffff;
+        padding: 10px 20px;
     }
-.cv-sidebar {
-    float: left;
-    width: 250px;
-    background: #000614;
-    overflow: hidden;
+        .bt-kn-m:hover {
+            background: #26c17e;
+        }
+/*Стили второй страницы*/
+#second-list {
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
-    .list-item img {
+/*Сайт бар*/
+.cv-sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    background: #000000;
+}
+    .my-foto-sb {
+        width: 100px;
+        height: 100px;
         display: block;
         margin: 20px auto;
         border-radius: 100px;
         border: 2px solid #fff;
     }
-    .list-item p {
+    .my-name-sb {
         text-align: center;
         font-weight: bold;
         color: #fff;
-        margin: 20px;
+        margin-bottom: 40px;
     }
-    .sidebar-items a {
+    .link-list {
         display: block;
-        width: 100%;
         padding: 20px;
         border-top: 1px dashed #222935;
-        font-size: 18px;
         text-decoration: none;
         color: #667081;
     }
-    .sidebar-items a:last-child {
+    .link-list:last-child {
         border-bottom: 1px dashed #222935;
     }
-    .cv-sidebar button {
-        background: #000614;
+        .link-list:hover {
+            color: #fff;
+        }
+        .link-list:active {
+            color: #26c17e;
+        }
+            .link-list  > .fa {
+                width: 20px;
+                margin-right: 20px;
+                text-align: center;
+            }
+    .btn-sb {
+        text-decoration: none;
         color: #fff;
-        border: none;
-        display: block;
-        padding: 0;
-        margin: 20px auto;
-        font-size: 18px;
+        text-align: center;
+        padding: 20px;
+        margin: 0;
     }
-
+    .fa-bars {
+        position: fixed;
+        background: #000;
+        color: #ffffff;
+        left: 250px;
+        top: 10px;
+        border-radius:0 5px 5px 0;
+        text-align: center;
+        padding: 10px;
+    }
+    .fa-chevron-up {
+        position: fixed;
+        bottom: 0;
+        right: 10px;
+        background: #000;
+        color: #ffffff;
+        border-radius:5px 5px 0 0;
+        text-align: center;
+        padding: 10px;
+        z-index: 10;
+    }
+/*Контент*/
 .cv-content {
     float: left;
+    margin-left: 250px;
     max-width: 900px;
     padding: 40px;
-    background: #ffffff;
 }
     .name-content {
         font-size: 25px;
         color: #26c17e;
         display: block;
-        margin-bottom: 50px;
+        margin: 40px 0 50px 0;
     }
     .me-item {
         margin: 0;
         padding: 0;
         margin-bottom: 40px;
     }
-            #timeline {
-                margin: 20px 0 20px 20px;
-                padding: 0 0 5px 0;
-                border-left: 5px solid;
-                border-right: 0px;
-                border-image: radial-gradient(#26c17e 30%, #fff) 1 100%;
+    .my-education {
+        position: relative;
+        margin-bottom: 40px;
+    }
+            .timeline {
+                width: 100%;
+                height: 250px;
+                overflow-y: scroll;
+                opacity: 0;  
+                transition: 2s; 
             }
-                .timeline-item {
-                    overflow: hidden;
-                    height: auto;
-                    font-size: 13px;
-                    position: relative;
-                    margin: 5px 0;
+                    .fa-spin {
+                        position: absolute;
+                        left: 45%;
+                        top: 50%;
+                        color: #26c17e;
+                        transition: opacity 2s;
+                    }
+            .timeline:hover {
+                opacity: 1;
+            }
+                .timeline-line {
+                    height: 120%;
+                    width: 5px;
+                        border-left: 5px solid;
+                    border-image: radial-gradient(#26c17e 30%, #fff) 1 100%;
+                    float: left;
+                    margin-left: 30px;
                 }
                 .timeline-year {
-                    width: 20px;
-                    height: 28px;
-                    font-weight: bold;
-                    background: white;
-                    padding: 5px;
-                    font-size: 12px;
                     float: left;
-                    margin: 9px 0 0 -23px;
+                    font-size: 15px;
+                    margin-left: -30px;
                 }
-                    .timeline-content {
-                        background: #eeeeee;
-                        border-bottom: 2px solid #a9a9a9;
-                        margin: 5px 0 0 30px;
-                        padding: 8px 0 12px 8px;
+                    .timeline-year p {
+                        font-size: 16px;
+                        font-weight: 700;
+                        padding: 5px;
+                        background: #fff;
                     }
+                .timeline-content {
+                    background: #eeeeee;
+                    border-bottom: 1px solid #a9a9a9;
+                    padding: 15px;
+                    margin: 10px 0 10px 80px;
+                }
                     .timeline-content h3 {
-                        font-size: 13px;
+                        position: relative;
+                        right: 20px;
+                        font-size: 15px;
                         margin: 0;
+                        padding: 0;
+                        margin-bottom: 5px;
                     }
                     .timeline-content p {
-                        font-size: 12px;
                         margin: 0;
+                        padding: 0;
                     }
                     .angl {
+                        float: left;
                         width: 0;
                         height: 0;
-                        border: 15px solid transparent; 
-                        border-right-color: #eeeeee;  
-                        border-left: 0;
-                        margin-right: 0;
+                        border: 10px solid transparent; 
+                        border-right-color: #eeeeee; 
                         position: relative;
-                        left: 45px;
-                        bottom: 30px;
+                        right: 35px;
                     }
-                .exp-item {
-                    overflow: hidden;
+        .exp-item {
+           overflow: hidden;
+           margin-bottom: 30px;
+        }
+            .exp-year,
+            .exp-content {
+                font-size: 16px;
+                font-weight: 700;
+                float: left;
+            }
+                .exp-year p ,
+                .exp-content  p {
+                    margin: 0;
+                    padding: 0;
+                    font-weight: normal;
+                    font-size: 14px;
+                    margin-top: 5px;
                 }
-                .exp-year {
-                    width: 80px;
-                    font-size: 10px;
-                    font-weight: bold;
-                    float: left;
-                    margin: 3px 0 0 10px;
+            .exp-content {
+                float: right;
+                width: 80%;
+            }
+        .skills-form {
+            display: none;
+        }
+        .skills-ul {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+        }
+            .skill-prog {
+                display: block;
+                width: auto;
+                background: #26c17e;
+                color: white;
+                margin-top: 5px;
+                padding: 10px;
+            }
+                    .skill-prog-1 {
+                        margin-right: 240px;
+                    }
+                    .skill-prog-2 {
+                        margin-right: 240px;
+                    }
+                    .skill-prog-3 {
+                        margin-right: 10px;
+                    }
+                    .skill-prog-4 {
+                        margin-right: 40px;
+                    }
+                    .skill-prog-5 {
+                        margin-right: 80px;
+                    }
+                .skills-table {
+                    width: 100%;
+                    border-collapse: collapse;
+                    margin-top: 20px;
                 }
-                    .exp-year  p {
+                    .skills-line {
+                        border-left: 1px solid #a9a9a9;
+                        border-bottom: 1px solid #a9a9a9;
+                        padding: 3px 40px;
+                    }
+                        .skills-line-2 {
+                            padding: 0 80px;
+                        }
+                        .skills-line-3 {
+                            border-right: 1px solid #a9a9a9;
+                        }
+                .table-title {
+                    border-collapse: collapse;
+                    width: 100%;
+                    color: #a9a9a9;
+                    margin-top: 20px;
+                }
+                    .title-name {
+                        display: block;
+                    }
+                        .title-name-begin {
+                            float: left;
+                            margin-right: 12%;
+                        }
+                        .title-name-prof {
+                            float: left;
+                        }
+                        .title-name-exp {
+                            float: right;
+                            margin-left: 12%;
+                        }
+                        .title-name-mast {
+                            float: right;
+                        }
+        
+        .my-portfolio {
+            width: 100%;
+        }
+            .ref-portfolio {
+                text-decoration: none;
+                color: #000;
+            }
+                .ref-portfolio:hover {
+                    color: #26c17e; 
+                }
+        .contact {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            text-align: center;
+        }
+            .contact-pic {
+                padding: 0;
+                margin: 0;
+                border-right: 1px solid #eeeeee;
+                float: left;
+                list-style: none;
+            }
+                    .contact-pic-fa {
+                        color: #26c17e;
+                        vertical-align: middle;
+                        padding: 15px;
+                        border-bottom: 1px solid #eeeeee;
+                    }
+                        .fa-skype {
+                            border-bottom: none;
+                        }
+                        .fa-phone {
+                            padding-right: 18px;
+                        }
+                        .fa-facebook {
+                            padding-right: 22px;
+                        }
+                .contact-item a { 
+                    font-size: 12px;
+                    font-weight: normal;
+                    color: #a9a9a9;
+                }
+                .contact-item a:hover {
+                    color: #26c17e;
+                }
+            .contact-item {
+                margin-left: 20px;
+                font-size: 14px;
+                font-weight: bold;
+                list-style: none;
+            }
+                    .contact-item  li  p {
+                        font-size: 12px;
                         font-weight: normal;
                         color: #a9a9a9;
-                        margin-top: 3px;
+                        margin: 0;
                     }
-                .exp-content {
-                    font-size: 12px;
-                    float: right;
-                    width: 370px;
-                }
-                    .exp-content  p {
-                        font-size: 13px;
-                        font-weight: bold;
-                        margin: 0 0 3px 0;
+                    .contact-item  li {
+                        height: 38px;
+                        vertical-align: middle;
+                        padding-top: 10px;
                     }
-                .exp-item-2 {
-                    margin: 20px 0;
-                }
-
+@media screen and (max-width: 400px) {
+    .cv-sidebar {
+        width: 65px;
+    }
+    .cv-content {
+        margin-left: 65px;
+    }
+    .name-link {
+        display: none;
+    }
+    .my-name-sb {
+        display: none;
+    }
+    .my-foto-sb {
+        width: 70%;
+        height: 70%;
+        margin: 10px auto;
+    }
+    .fa-bars {
+    left: 65px;
+    }
+}

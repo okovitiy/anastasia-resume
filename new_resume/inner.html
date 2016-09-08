@@ -1,162 +1,223 @@
 ﻿<!DOCTYPE html>
 <html>
     <head>
-    <meta charset="utf-8">
+        <meta charset="utf-8">
         <title>Resume Okovita</title>
-        <link href="css\all.css" rel="stylesheet">
+        <link href="css/all.css" rel="stylesheet">
         <link href="images" rel="stylesheet">
         <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
         <script src="js"></script>
     </head>
     <body>
-    <div class="second-list">
-      <div class="cv-sidebar">  
-        <div class="list-item">
-            <img src="images\my foto.jpg" width="100" height="100"></img>
-            <p>Анастасия Оковитая</p> 
-            <nav class="sidebar-items">
-                <a href="#">About me</a>
-                <a href="#">Education</a>
-                <a href="#">Experience</a>
-                <a href="#">Skills</a>
-                <a href="#">Portfolio</a>
-                <a href="#">Contacts</a>
-                <a href="#">Feedbacks</a>
-            </nav>
-        </div>
-        <button><a href="index.html">< Go back</a></button>
-      </div>    
-      <div class="cv-content">
-        <div class="about-me">
-            <b class="name-content">About me</b>
-            <p class="me-item">Я родилась и живу в Украине, г. Харьков. С любовью воспитываю троих чудесных детей, которые вдохновляют меня на творчество!
-                Мне нравится делать наш мир прекраснее! После окончания ВУЗа по специальности "Дизайн архитектурной среды", 
-                занималась индивидуальным дизайном и проектированием частных домов. 
-                Но с быстрым развитием технологий, все больше привлекали дизайн и верстка сайтов.
-                Трудолюбие, желание и старание подтолкнули к освоению новой специальности, которая позволяет, как нельзя лучше, 
-                сочетать два моих любимых дела - воспитание детей и заниматься работой!!!
-                К любому делу отношусь ответственно и добросовестно.                        
-            </p>
-        </div>
-        <div class="my-education">
-            <b class="name-content">Education</b>
-                <div id="timeline">
-                    <div class="timeline-year">1991-1994
+    <!Вторая страница>
+    <div id="second-list">
+        <div class="cv-sidebar"> <!Сайт бар>   
+            <div class="list-item">
+                <img class="my-foto-sb" src="images/my-foto.jpg" alt="Мое фото">
+                <p class="my-name-sb">Анастасия Оковитая</p> 
+                <nav class="sidebar-items">
+                    <a class="link-list" href="#about_me">
+                        <i class="fa fa-user fa-lg" aria-hidden="true"></i>
+                        <span class="name-link">About me</span>
+                    </a>
+                    <a class="link-list" href="#my_educat">
+                        <i class="fa fa-graduation-cap fa-lg" aria-hidden="true"></i>
+                        <span class="name-link">Education</span>
+                    </a>
+                    <a class="link-list" href="#">
+                        <i class="fa fa-pencil fa-lg" aria-hidden="true"></i>
+                        <span class="name-link">Experience</span>
+                    </a>
+                    <a class="link-list" href="#">
+                        <i class="fa fa-diamond fa-lg" aria-hidden="true"></i>
+                        <span class="name-link">Skills</span>
+                    </a>
+                    <a class="link-list" href="#">
+                        <i class="fa fa-suitcase fa-lg" aria-hidden="true"></i>
+                        <span class="name-link">Portfolio</span>
+                    </a>
+                    <a class="link-list" href="#">
+                        <i class="fa fa-location-arrow fa-lg" aria-hidden="true"></i>
+                        <span class="name-link">Contacts</span>
+                    </a>
+                    <a class="link-list" href="#">
+                        <i class="fa fa-comment-o fa-lg" aria-hidden="true"></i>
+                        <span class="name-link">Feedbacks</span>
+                    </a>
+                </nav>
+                <a class="btn-sb" href="index.html">
+                    <p class="name-btn-sb">
+                        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                        Go back
+                    </p>
+                </a>
+            </div>
+            <i class="fa fa-bars fa-lg" aria-hidden="true"></i>
+            <i class="fa fa-chevron-up" aria-hidden="true"></i>
+        </div>  
+        <div class="cv-content">
+            <div class="about-me">
+            <a name="about_me"></a>
+                <b class="name-content">About me</b>
+                <p class="me-item">Я родилась и живу в Украине, г. Харьков. С любовью воспитываю троих чудесных детей, которые вдохновляют меня на творчество!
+                    Мне нравится делать наш мир прекраснее! После окончания ВУЗа по специальности "Дизайн архитектурной среды", 
+                    занималась индивидуальным дизайном и проектированием частных домов. 
+                    Но с быстрым развитием технологий, все больше привлекали дизайн и верстка сайтов.
+                    Трудолюбие, желание и старание подтолкнули к освоению новой специальности, которая позволяет, как нельзя лучше, 
+                    сочетать два моих любимых дела - воспитание детей и заниматься работой!!!
+                    К любому делу отношусь ответственно и добросовестно.                        
+                </p>
+            </div>
+            <div class="my-education">
+                <a name="my_educat"></a>
+                <b class="name-content">Education</b>
+                <i class="fa fa-spinner fa-spin fa-2x"></i>
+                <div class="timeline">
+                    <div class="timeline-line"></div>
+                    <div class="timeline-year">
+                        <p>1991</p>
+                    </div>
+                    <div class="timeline-content">
                         <div class="angl"></div>
+                        <h3>СОШ №4 г. Харькова</h3> 
+                        <p>Обучение в начальных классах.</p>
                     </div>
-                    <div class="timeline-item">
-                        <div class="timeline-content">
-                            <h3>СОШ №4 г. Харькова</h3> 
-                            <p>Обучение в начальных классах</p>
-                        </div>
+                    <div class="timeline-year">
+                        <p>1994</p>
                     </div>
-                    <div class="timeline-year">1994-2001
+                    <div class="timeline-content">
                         <div class="angl"></div>
+                        <h3>СОШ №36 г. Харькова</h3> 
+                        <p>Обучение в старших классах.<br>Окончила учебу в 2001г. получив полное среднее образование.</p>
                     </div>
-                    <div class="timeline-item">
-                        <div class="timeline-content">
-                            <h3>СОШ №36 г. Харькова</h3> 
-                            <p>Обучение в старших классах</p>
-                        </div>
+                    <div class="timeline-year">
+                        <p>2001</p>
                     </div>
-                    <div class="timeline-year">2001-2007
+                    <div class="timeline-content">
                         <div class="angl"></div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-content">
-                            <h3>ХГТУСА</h3> 
-                            <p>Учеба в ВУЗе по специальности<br>"Дизайн архитектурной среды"</p>
-                        </div>
+                        <h3>ХГТУСА</h3> 
+                        <p>Учеба в ВУЗе по специальности
+                            <br>"Дизайн архитектурной среды".
+                            <br>В 2008г. получила диплом специалиста о полном ывсшем образовании.
+                        </p>
                     </div>
                 </div>  
-        </div>
-        <div class="my-experience">
-            <b class="name-content">Experience</b>
-            <div class="my-exp-item">
-                    <div class="exp-item exp-item-1">
+            </div>
+            <div class="my-experience">
+                <b class="name-content">Experience</b>
+                <div class="my-exp-item">
+                    <div class="exp-item">
                         <div class="exp-year">ЧП<p>2006-2016</p></div> 
                         <div class="exp-content">
-                            <p>Архитектор-дизайнер</p>Проектирование и сопровождение строительства частных коттеджей. 
+                            Архитектор-дизайнер
+                            <p>Проектирование и сопровождение строительства частных коттеджей. 
                             Дизайн интерьера и экстерьера. Ландшафтный дизайн. 
-                            Дизайн мебели по индивидуальному заказу.
+                            Дизайн мебели по индивидуальному заказу.</p>
                         </div>
                     </div>
-                    <div class="exp-item exp-item-2">
+                    <div class="exp-item">
                         <div class="exp-year">000 "КРУАР"<p>2008-2009</p></div> 
                         <div class="exp-content">
-                            <p>Архитектор-дизайнер</p>Специалист по вопросам недвижимости.
+                            Архитектор-дизайнер
+                            <p>Специалист по вопросам недвижимости.</p>
                         </div>
                     </div>
-                    <div class="exp-item exp-item-3">
+                    <div class="exp-item">
                         <div class="exp-year">Харьковпроект<p>2006</p></div> 
                         <div class="exp-content">
-                            <p>Архитектор</p>Проектирование многоэтажных жилых домов,<br>планировочные решия, дизайн фасадов.
+                            Архитектор
+                            <p>Проектирование многоэтажных жилых домов,<br>планировочные решия, дизайн фасадов.</p>
                         </div>
                     </div>
+                </div>
+            </div>
+            <div class="my-skills">
+                <b class="name-content">Skills</b>
+                <div class="skills-form">
+                    <form class="skills-form" action="/auth" method="post">
+                        <p class="title-skills">Skill name:
+                            <input type="text" name="text" placeholder="Enter skill name">
+                            </p>
+                        <p class="title-skills">Skill range:
+                            <input type="text" name="text" placeholder="Enter">
+                        </p>
+                    </form>
+                    <button>Add skills</button>
+                </div>
+                <ul class="skills-ul">
+                    <li class="skill-prog skill-prog-1">HTML</li>
+                    <li class="skill-prog skill-prog-2">CSS</li>
+                    <li class="skill-prog skill-prog-3">Arhicad</li>
+                    <li class="skill-prog skill-prog-4">CorelDrow</li>
+                    <li class="skill-prog skill-prog-5">Photoshop</li>
+                </ul>
+                <table class="skills-table">
+                    <tr>
+                        <td class="skills-line skills-line-1"></td>
+                        <td class="skills-line skills-line-2"></td>
+                        <td class="skills-line skills-line-3"></td>
+                    </tr>
+                </table>
+                <table class="table-title">
+                    <tr>
+                        <td class="title-name title-name-begin">Beginner</td>
+                        <td class="title-name title-name-prof">Profecient</td>
+                        <td class="title-name title-name-exp">Expert</td>
+                        <td class="title-name title-name-mast">Master</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="my-portfolio">
+                <b class="name-content">Portfolio</b>
+                <nav class="ref-portfolio">
+                    <a class="ref-portfolio" href="#">All</a> / 
+                    <a class="ref-portfolio" href="#">Code</a> /
+                    <a class="ref-portfolio" href="#">UI</a>
+                </nav>
+            </div>
+            <div class="my-contacts">
+                <b class="name-content">Contacts</b>
+                <ul class="contact-pic">
+                    <li><i class="fa fa-phone fa-lg contact-pic-fa"></i></li>
+                    <li><i class="fa fa-envelope fa-lg contact-pic-fa"></i></li>
+                    <li><i class="fa fa-facebook fa-lg contact-pic-fa"></i></li>
+                    <li><i class="fa fa-skype fa-lg contact-pic-fa"></i></li>
+                </ul>
+                <ul class="contact-item">
+                    <li>095 341 07 88</li>
+                    <li>okovita.a@gmail.com</li>
+                    <li>Facebook<a href="https://www.facebook.com/profile.php?id=100006082744572"><br>Анастасия Оковитая</a></li>
+                    <li>Skype<p>okovita_nastya</p></li>
+                </ul>
+            </div>
+            <div class="my-feedbacks">
+                <b class="name-content">Feedbacks</b>
+                <ul>
+                    <li><img src="images/my-foto.jpg" height="30" alt="Мое фото"></li>
+                    <ul>
+                        <li>Проектирование и сопровождение строительства частных коттеджей. Дизайн интерьера и экстерьера.<br> 
+                            Ландшафтный дизайн.
+                            <a href="#">somesite.com</a>
+                        </li>
+                    </ul>
+                    <li><img src="images/my-foto.jpg" height="30" alt="Мое фото"></li>
+                    <ul>
+                        <li>Проектирование и сопровождение строительства частных коттеджей. Дизайн интерьера и экстерьера.<br> 
+                            Ландшафтный дизайн.
+                            <a href="#">somesite.com</a>
+                        </li>
+                    </ul>
+                    <li><img src="images/my-foto.jpg" height="30" alt="Мое фото"></li>
+                    <ul>
+                        <li>Проектирование и сопровождение строительства частных коттеджей. Дизайн интерьера и экстерьера.<br> 
+                            Ландшафтный дизайн.
+                            <a href="#">somesite.com</a>
+                        </li>
+                    </ul>
+                </ul>
             </div>
         </div>
-        <div class="my-skills">
-            <b class="name-content">Skills</b>
-            <form class="skills-form" action="/auth" method="post">
-                <p class="title-skills">Skill name:
-                    <input type="text" name="text" placeholder="Enter skill name">
-                </p>
-                <p class="title-skills">Skill range:
-                    <input type="text" name="text" placeholder="Enter">
-                </p>
-            </form>
-            <button>
-                Add skills
-            </button>
-            <p>HTML<br>
-            CSS<br>
-            jQyerry<br>
-            PHP<br>
-            Beginner<br>
-            Profecient<br>
-            Expert<br>
-            Master
-            </p>
-        </div>
-        <div class="my-portfolio">
-            <b class="name-content">Portfolio</b>
-            <nav>
-                <a href="#">All</a><br>
-                <a href="#">Code</a><br>
-                <a href="#">UI</a>
-            </nav>
-        </div>
-        <div class="my-contacts">
-            <b class="name-content">Contacts</b>
-            <p>095 341 07 88</p>
-        </div>
-        <div class="my-feedbacks">
-            <b class="name-content">Feedbacks</b>
-            <ul>
-                <li><img src="images\my foto.jpg" height="30"></img></li>
-                <ul>
-                    <li>Проектирование и сопровождение строительства частных коттеджей. Дизайн интерьера и экстерьера.<br> 
-                        Ландшафтный дизайн.
-                        <a href="#">somesite.com</a>
-                    </li>
-                </ul>
-                <li><img src="images\my foto.jpg" height="30"></img></li>
-                <ul>
-                    <li>Проектирование и сопровождение строительства частных коттеджей. Дизайн интерьера и экстерьера.<br> 
-                        Ландшафтный дизайн.
-                        <a href="#">somesite.com</a>
-                    </li>
-                </ul>
-                <li><img src="images\my foto.jpg" height="30"></img></li>
-                <ul>
-                    <li>Проектирование и сопровождение строительства частных коттеджей. Дизайн интерьера и экстерьера.<br> 
-                        Ландшафтный дизайн.
-                        <a href="#">somesite.com</a>
-                    </li>
-                </ul>
-            </ul>
-        </div>
-      </div>
     </div>
     </body>
 </html>
