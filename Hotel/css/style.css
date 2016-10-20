@@ -1,0 +1,146 @@
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: auto;
+	font-family: Tahoma;
+}
+    @font-face {
+        font-family: 'Open sans', Arial, Tahoma;
+        src: url(fonts/Open sans.ttf);
+        src: url(fonts/arial.ttf);
+        src: url(fonts/Tahoma-Regular.ttf);
+        font-size: 12px;
+    }
+.header {
+	background: #e0a169;
+	height: 74px;
+	border-top: 1px solid #472A10;
+}
+.sv-logo {
+	float: left;
+	margin: 10px 20px;
+}
+.head-menu {
+	position: relative;
+	width: 100%;
+}
+ul {
+    display: block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+	ul:after {
+		display: block;
+		content: ' ';
+		clear: both;
+		float: none;
+	}
+	ul.main-menu > li {
+		float: left;
+		position: relative;
+	}
+	ul.main-menu > li > a {
+		display: block;
+		padding:  22px 25px;
+		color: #472A10;
+		font-size: 18px;
+		font-weight: 600;
+		text-decoration: none;
+		height: 72px;
+	}
+		ul.main-menu > li > a:hover {
+			background-color: #BD885B;
+			color: #fff;
+			text-shadow: #472A10 2px 2px 2px;
+		}
+ul.sub-menu {
+    display: none;
+    position: absolute;
+    width: 80px;
+    top: 60px;
+    right: 0;
+	text-align: center;
+}
+	ul.sub-menu > li {
+		display: block;
+	}
+		ul.sub-menu > li > a {
+			display: block;
+			padding: 5px 10px;
+			color: #472A10;
+			background-color: #FCF4CC;
+			text-decoration: none;
+		}
+			ul.sub-menu > li > a:hover {
+				text-decoration: none;
+				background: #BD885B;
+				color: #fff;
+			}
+ul.main-menu > li:hover > ul.sub-menu {
+    display: block;
+}
+.main-contact {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	display: inline;
+	text-align: right;
+	font-size: 12px;
+	font-weight: 700;
+	color: #fff;
+	text-shadow: #472A10 2px 2px 2px;
+}
+.main-content {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	background: #FCF4CC;
+	border-top: 2px solid #fff;
+	border-bottom: 2px solid #fff;
+}
+.about-hotel {
+	margin: 0;
+	padding: 0;
+	width: 165px;
+	height: auto;
+	font-size: 16px;
+	color: #472A10;
+	text-align: center;
+	position: absolute;
+	top: 340px;
+	left: 50px;
+}
+	.wf-hotel {
+		padding-top: 20px;
+		font-weight: bold;
+ 	}
+	.foto-panarama {
+		float: left;
+		margin-top: -45px;
+	}
+	.foto-vhod {
+		display: block;
+		margin: 0;
+		padding: 0;
+		margin: 0 auto;
+		border-top: 2px solid #fff;
+		border-bottom: 2px solid #fff;
+	}
+	.video-h {
+		padding: 10px 20px;
+		background: #fff;
+		border: 1px solid #472A10;
+		color: #472A10;
+		font-weight: bold;
+		position: absolute;
+		top: 130px;
+		left: 20px;
+	}
+		.video-h:hover {
+			text-decoration: none;
+			background: #BD885B;
+			color: #fff;
+			text-shadow: #472A10 2px 2px 2px;
+		}
