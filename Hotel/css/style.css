@@ -146,7 +146,6 @@ body {
 			width: 42%;
 			height: auto;
 			border-top: 2px solid #fff;
-			border-bottom: 2px solid #fff;
 		}
 	.rooms {
 		margin: 0;
@@ -175,4 +174,22 @@ body {
 				margin-right: 10px;
 				border: 1px solid #fff; 
 			}
-		
+.footer {
+	background: #e0a169;
+	color: #472A10;
+}
+	.list-unstyled > li > a {
+		color: #fff;
+	}
+	
+/*Стили контактов*/
+.contact-content {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	margin-bottom: 50px;
+}	
+	.qr-code {
+		float: right;
+		margin: 0 20px 0 0;
+	}
