@@ -69,6 +69,7 @@ body {
 		}
 			ul.sub-menu > li {
 				display: block;
+				border: 1px solid #fff;
 			}
 				ul.sub-menu > li > a {
 					display: block;
@@ -188,8 +189,24 @@ body {
 	padding: 0;
 	text-align: center;
 	margin-bottom: 50px;
+	background: #FCF4CC;
+	padding-top: 50px;
+	margin-top: -57px;
 }	
+	.title-cont {
+		font-weight: bold;
+	}
+	.title-cont-book {
+		color: #e0a169;
+	}
+		.title-cont-book:hover {
+			color: #BD885B;
+			
+		}
 	.qr-code {
 		float: right;
 		margin: 0 20px 0 0;
+	}
+	.map-g {
+		margin-left: 20px;
 	}
