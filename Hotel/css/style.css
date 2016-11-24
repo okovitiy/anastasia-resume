@@ -210,3 +210,9 @@ body {
 	.map-g {
 		margin-left: 20px;
 	}
+/*Стили описания отеля*/
+.content-about-hotel {
+	display: inline-block;
+	text-align: center;
+	margin: 40px auto;
+}
