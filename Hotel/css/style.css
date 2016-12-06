@@ -12,6 +12,7 @@ body {
         src: url(fonts/Tahoma-Regular.ttf);
         font-size: 12px;
     }
+/*Стили главной страницы*/
 .header {
 	background: #e0a169;
 	height: 74px;
@@ -183,7 +184,7 @@ body {
 		color: #fff;
 	}
 	
-/*Стили контактов*/
+/*Стили страницы контактов*/
 .contact-content {
 	margin: 0;
 	padding: 0;
@@ -210,9 +211,24 @@ body {
 	.map-g {
 		margin-left: 20px;
 	}
-/*Стили описания отеля*/
+/*Стили страницы описания отеля*/
 .content-about-hotel {
 	display: inline-block;
 	text-align: center;
 	margin: 40px auto;
+}
+/*Стили страницы описания номеров*/
+.rooms-content {
+	
+}
+.left-rooms {
+	float: left;
+	width: 20%;
+}
+.right-rooms {
+	float: right;
+	width: 20%;
+}
+.plan-rooms {
+	width: 20%;
 }
